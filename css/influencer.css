@@ -1,0 +1,261 @@
+/* ---------Goggole fonts--------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*----- google fonts end -------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contain {
+    background-color: #ffffff;
+    width: 990px;
+    padding: 20px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+.menu-title {
+    color: cornflowerblue;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+
+}
+
+nav>ul {
+    display: flex;
+    margin-top: 0;
+}
+
+nav>ul>li {
+    list-style: none;
+    margin-right: 16px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* top-container */
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.top-details {
+    width: 40%;
+    margin-top: 60px;
+}
+
+.top-details h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+.top-details p {
+    margin-bottom: 30px;
+}
+
+.check-button {
+    padding: 10px 40px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.fa-arrow-right {
+    margin-left: 8px;
+}
+
+.top-img {
+    border: 1px solid #beadbe;
+    border-radius: 50%;
+    transition: transform 5s;
+
+}
+
+.top-img:hover {
+
+    transform: rotate(360deg);
+}
+
+.top-img img {
+    width: 400px;
+}
+
+/* Ecommerce Icon */
+.logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 50px;
+    grid-gap: 0;
+}
+
+
+/* Main-conatiner Style */
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.container {
+    box-shadow: 1px 4px 4px 4px gray;
+    margin-left: 0%;
+    margin: 10%;
+    border-radius: 4px;
+}
+
+.container:hover {
+    cursor: pointer;
+    background-color: #beadbe;
+}
+
+.container-img img {
+    width: 96%;
+    padding: 5px;
+}
+
+.container-detials {
+    padding: 10px;
+}
+
+.container-detials h1 {
+    text-align-last: left;
+}
+
+.describe {
+    font-weight: 400;
+    font-size: 11px;
+    color: darkgray;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.popular h1 {
+    text-align: center;
+}
+
+.fa-solid.fa-star {
+    font-size: 10px;
+    color: orange;
+}
+
+/* main container style end */
+
+/* footer style */
+footer {
+    background-color: blueviolet;
+    width: 100%;
+
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.social-icon {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+
+
+}
+
+.fa-brands {
+    color: #ffffff;
+
+    border-radius: 50%;
+    border: 1px solid gold;
+}
+
+/* Respnsive nav bar */
+@media (max-width:680px) {
+    h1 {
+        font-size: 20pxpx;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fa-cart-plus,
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-details {
+        width: 100%;
+    }
+
+    .top-img {
+        margin-top: 30px;
+        border: none;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+        grid-gap: 15px;
+    }
+
+    .contain {
+        width: 100%;
+    }
+
+    /* main-contain style */
+    .popular h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:900px) {}
+
+
+
+}
